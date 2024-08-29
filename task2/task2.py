@@ -1,13 +1,14 @@
 def read_circle_data():
-    circle_data = input("Координаты центра окружности через пробел: ")
-    center_x, center_y = map(float, circle_data.split())
-    radius = float(input("Радиус окружности: "))
+    # Координаты центра окружности через пробел
+    center_x, center_y = map(float, input().split())
+    # Радиус окружности
+    radius = float(input())
     return (center_x, center_y), radius
   
 def read_points_data():
     points = []
     
-    print("Координаты точек (каждая точка в формате 'x y', завершить ввод можно пустой строкой):")
+    # Координаты точек (каждая точка в формате 'x y', завершить ввод можно пустой строкой)
     while True:
         line = input()
         if line.strip() == "":  # Проверяем, если строка пустая, прерываем цикл
