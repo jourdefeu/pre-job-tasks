@@ -1,5 +1,3 @@
-import sys
-
 def read_circle_data():
     circle_data = input("Координаты центра окружности через пробел: ")
     center_x, center_y = map(float, circle_data.split())
